@@ -2,7 +2,71 @@ header{
     background-color: var(--azul);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+}
+
+.caixa__links{
+    display: none;
+}
+
+.menu-treinamentos{
+    display: none;
+}
+
+#check-menu__treinamentos{
+    display: none;
+}
+
+.menu__botao-treinamentos{
+    font-size: 13px;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    margin-left: .5em;
+    text-decoration: none;
+}
+
+
+.link{
+    font-size: 13px;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    margin-left: .5em;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--azul-claro);
+}
+
+
+.menu__botao-treinamentos:hover{
+    color: var(--azul-claro);
+}
+
+.lista-treinamentos{
+    background-color: var(--azul-claro);
+    position: absolute;
+    top: 100%;
+    padding: .5em;
+    display: none;
+    width: auto;
+}
+
+.lista-treinamentos>li{
+    margin:2em .5em;
+}
+
+#check-menu__treinamentos:checked~.lista-treinamentos{
+    display: block;
+}
+
+.link{
+    display: none;
 }
 
 .menu__botao{
@@ -22,7 +86,7 @@ header{
     background-color: var(--azul-claro);
     position: absolute;
     top: 100%;
-    padding: .5em;
+    padding:.5em;
     display: none;
     width: 49vw;
 }
@@ -62,6 +126,11 @@ header{
     flex-direction: row;
     padding: 1em;
     text-transform: uppercase;
+    align-items: center;
+}
+
+.logo{
+    display: none;
 }
 
 .titulo>.Martin{
@@ -70,6 +139,7 @@ header{
     font-weight: 200;
     color:var(--branco);
     text-decoration: none;
+    margin-left: .5em;
 }
 
 .titulo>.Brower{
@@ -78,6 +148,11 @@ header{
     font-weight: 600;
     color:var(--branco);
     text-decoration: none;
+}
+
+.espaço__branco{
+    width: 100px;
+    display: none;
 }
 
 .busca__botao{
@@ -117,4 +192,33 @@ header{
 
 #check-busca:checked~#search{
     display: block;
+}
+@media screen and (min-width:1024px) {
+    .menu-treinamentos{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+    .link{
+        display: block;
+    }
+    .titulo{
+        order:-1;
+    }
+    .caixa__links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1em;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .espaço__branco{
+        display: block;
+    }
 }
