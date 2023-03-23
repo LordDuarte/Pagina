@@ -1,0 +1,122 @@
+.caixa_sobre_treinamento{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 2em auto;
+}
+
+.sobre_treinamento{
+    font-size: 19px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    color: var(--azul);
+    padding: .7em;
+    text-align: center;
+}
+
+.texto_sobre_treinamento{
+    font-size: 19px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    color: var(--azul);
+    padding: .7em;
+}
+
+
+.background_faturamento{
+    background-image: url(faturamento.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background_cover{
+    background-color: rgba(0, 47, 101, 0.8);
+}
+
+.titulo_treinamento{
+    margin:2em auto 0 auto;
+}
+
+.titulo_treinamento>h1{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    color: var(--azul);
+    padding: .7em;
+    text-align: center;
+}
+
+.titulo_treinamento2{
+    background-color: var(--azul-claro);
+}
+
+.titulo_treinamento2>h2{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    text-align: center;
+    color: var(--branco);
+    padding: 1em;
+}
+
+.texto_categorias{
+    background-color: rgba(0, 47, 101, 0.8);
+}
+
+.texto_categorias>h3{
+    font-size: 18px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    color: var(--branco);
+    padding: .7em;
+    text-align: center;
+}
+
+
+.categorias{
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px var(--branco);
+}
+
+.categorias:hover{
+    box-shadow: inset 0 0 30px var(--azul);
+}
+
+.categorias>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--branco);
+    padding: .5em;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+}
+
+.lista_categorias{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    background-color: rgba(0, 47, 101, 0.8);
+}
+
+
+.titulo_treinamento3{
+    background-color: rgba(0, 47, 101, 0.8);
+    margin: 0 auto;
+}
+
+.titulo_treinamento3>h3{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    color: var(--branco);
+    text-align: center;
+    padding: 1em;
+}
+
